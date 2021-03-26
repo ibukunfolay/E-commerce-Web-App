@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="home.css" />  
+    <title>ShopStix</title>
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <button onclick="openMenu()">&#9776;</button>
+                <a href=""><h2>ShopStix</h2></a>
+            </div>
+            <div class="header-links">
+                <ul>
+                    <li>
+                        <a href="">Cart</a>
+                    </li>
+                    <li>
+                        <a href="">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <aside class="sidebar" onclick="closeMenu()">
+            <a href="/"><span>iPhone</span></a>
+            <a href="/"><span>Android</span></a>
+            <a href="/"><span>Cart</span></a>
+            <a href="/"><span>Back</span></a>
+        </aside>
+        <main>
+            <div class="content">
+                <ul class="products">
+                    <li>
+                        <div class="product-card">
+                            <img src="./images/6.JPG"/>
+                            <div class="product-name"><a href=""> iphone wallpaper </a></div>
+                            <div class="product-price">$49</div>
+                            <div class="product-brand">iphone</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <img src="./images/2.JPG"/>
+                            <div class="product-name"><a href=""> iphone wallpaper </a></div>
+                            <div class="product-price">$49</div>
+                            <div class="product-brand">iphone</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <div class="fade"><img src="./images/5.JPG"/></div>
+                            <div class="product-name"><a href=""> iphone wallpaper </a></div>
+                            <div class="product-price">$49</div>
+                            <div class="product-brand">iphone</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <img src="./images/4.JPG"/>
+                            <div class="product-name"><a href=""> iphone wallpaper </a></div>
+                            <div class="product-price">$49</div>
+                            <div class="product-brand">iphone</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <img src="./images/7.JPG"/>
+                            <div class="product-name"><a href=""> iphone wallpaper </a></div>
+                            <div class="product-price">$49</div>
+                            <div class="product-brand">iphone</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-card">
+                            <img src="./images/8.JPG"/>
+                            <div class="product-name"><a href=""> iphone wallpaper </a></div>
+                            <div class="product-price">$49</div>
+                            <div class="product-brand">iphone</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <div class="footer">
+            &copy 2020 all rights reserved. 
+        </div>
+    </div>
+    <script>
+        function openMenu(){
+            document.querySelector(".sidebar").classList.add("open")
+        }
+
+        function closeMenu(){
+            document.querySelector(".sidebar").classList.remove("open")
+        }
+    </script>
+</body>
+</html>
